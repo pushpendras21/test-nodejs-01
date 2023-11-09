@@ -32,9 +32,9 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
      
-      - name: Build and pushes docker image
+      - name: Build and pushes docker image 
         uses: docker/build-push-action@v4
         with:
           context: .
           push: true
-          tags: pushpendras21/test-node-v01:latest
+          tags: pushpendras21/test-node-v01:0.0.1
